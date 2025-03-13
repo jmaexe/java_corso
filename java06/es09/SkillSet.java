@@ -1,0 +1,2 @@
+public class SkillSet {
+}
