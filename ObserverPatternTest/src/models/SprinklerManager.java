@@ -22,7 +22,7 @@ public class SprinklerManager implements Observer {
 
     @Override
     public void update() {
-        System.out.println("Sprinkler Manager updated : " + subject.toString());
+        System.out.println("Sprinkler Manager received updates : " + subject.toString());
         manageSprinkler();
     }
 
