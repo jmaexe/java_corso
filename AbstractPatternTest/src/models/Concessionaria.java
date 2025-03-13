@@ -1,30 +1,17 @@
 package models;
 
 public class Concessionaria {
-    private VeicoloFactory factory;
 
-    public Concessionaria(VeicoloFactory factory) {
-        this.factory = factory;
+    public Concessionaria() {
+
     }
 
-    public void setFactory(VeicoloFactory factory) {
-        this.factory = factory;
-    }
-
-    public VeicoloFactory getFactory() {
-        return factory;
-    }
-
-    public Auto creaAuto() {
+    public Auto creaAuto(VeicoloFactory factory) {
         return factory.creaAuto();
     }
 
-    public Moto creaMoto() {
+    public Moto creaMoto(VeicoloFactory factory) {
         return factory.creaMoto();
     }
 
-    @Override
-    public String toString() {
-        return "concessionaria : " + factory;
-    }
 }
