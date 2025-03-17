@@ -3,8 +3,7 @@ package models;
 public class MotoDiLusso implements Moto {
 
     @Override
-    public String toString() {
-        return "moto di lusso to string";
+    public void mostraDettagli() {
+        System.out.println("moto di lusso");
     }
-
 }

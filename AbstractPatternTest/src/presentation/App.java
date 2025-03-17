@@ -9,7 +9,7 @@ public class App {
         int sceltaVeicolo = -1;
         FactoryDiLusso factoryDiLusso = new FactoryDiLusso();
         FactoryEconomica factoryEconomica = new FactoryEconomica();
-        Concessionaria concessionaria2 = new Concessionaria();
+        Concessionaria concessionaria = new Concessionaria();
         do {
             sceltaVeicolo = InputTastiera.leggiInt("-1 crea moto\n-2 crea auto\n-0 esci\nInserisci la tua scelta : ");
             int sceltaTipo = -1;
@@ -17,15 +17,15 @@ public class App {
             switch (sceltaVeicolo) {
                 case 1:
                     if (sceltaTipo == 1)
-                        System.out.println(concessionaria2.creaMoto(factoryDiLusso));
+                        concessionaria.creaMoto(factoryDiLusso);
                     else
-                        System.out.println(concessionaria2.creaMoto(factoryEconomica));
+                        concessionaria.creaMoto(factoryEconomica);
                     break;
                 case 2:
                     if (sceltaTipo == 2) {
-                        System.out.println(concessionaria2.creaAuto(factoryDiLusso));
+                        concessionaria.creaAuto(factoryDiLusso);
                     } else
-                        System.out.println(concessionaria2.creaMoto(factoryEconomica));
+                        concessionaria.creaMoto(factoryEconomica);
                 default:
                     break;
             }
